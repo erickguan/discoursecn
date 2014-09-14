@@ -1,0 +1,147 @@
+<%= content_for(:title, title_helper('问与答')) %>
+
+<%= render 'shared/header' %>
+
+<article id="faq">
+  <section>
+    <div class="row">
+      <div id="what"></div>
+      <h1><a href="#what">What is Discourse?</a></h1>
+      <p>
+        Discourse is the 100% open source discussion platform built for the next decade of the Internet. It works as:
+      </p>
+      <ul>
+        <li>a mailing list</li>
+        <li>a discussion forum</li>
+        <li>a long-form chat room</li>
+      </ul>
+      <div id="different"></div>
+      <h1><a href="#different">What's different about it?</a></h1>
+      <p>
+        Discourse is a from-scratch reboot, an attempt to reimagine what a modern, sustainable, fully open-source Internet discussion platform should be <i>today</i> – both from a technology standpoint and a sociology standpoint.
+      </p>
+      <p>
+        <b>We're civilized.</b>
+      </p>
+      <p>
+        Our trust system means that the community builds a natural immune system to defend itself from trolls, bad actors, and spammers – and the most engaged community members can assist in the governance of their community. We put a trash can on every street corner with a simple, low-friction flagging system. Positive behaviors are encouraged through likes and badges. We gently, constantly educate members in a just-in-time manner on <a href="http://blog.discourse.org/2013/03/the-universal-rules-of-civilized-discourse/">the universal rules of civilized discourse</a>.
+      </p>
+      <p>
+        <b>Uncompromisingly open source.</b>
+      </p>
+      <p>
+        There is only one version of Discourse – <a href="https://github.com/discourse/discourse"><i>the awesome version</i></a>. There's no super secret special paid commercial version with better or more complete features.
+      </p>
+      <p>
+        Everything that most communities would want is included right out of the box; a giant collection of complex plugins should not be required to have a great experience. And because Discourse is 100% open source, now and forever, it belongs to you as much as it belongs to us. That's how community is supposed to work.
+      </p>
+      <p>
+        <b>Simple. Modern. <i>Fun.</i></b>
+      </p>
+      <p>
+        Discussion shouldn't be complicated, confusing, or a chore. Participating in a conversation online should fundamentally <i>feel good</i> in a way that it currently does not on existing forums and mailing lists. It should be <i>fun</i> to jump in and have discussions with other human beings who are passionate about the same stuff as you.
+      </p>
+      <div id="features"></div>
+      <h1><a href="#features">No, seriously, what's different about it?</a></h1>
+      <p>
+        Discourse looks simple, clean, and straightforward. That's intentional. See <a href="http://v1.discourse.org/about/">our full feature set</a> and you'll discover amazing features you and your community will love.
+      </p>
+      <p>
+        But don't take our word for it. Play with Discourse in the sandbox at <a href="http://try.discourse.org/"><b>try.discourse.org</b></a> – or check out one of our many live partner and customer sites:
+      </p>
+      <p>
+        <a href="http://bbs.boingboing.net">
+          <%= image_tag 'boing-boing-latest-large.png', size: '358x340', alt: 'Boing Boing' %>
+        </a> &nbsp;
+        <a href="http://discuss.howtogeek.com">
+          <%= image_tag 'how-to-geek-profile-large.png', size: '358x340', alt: 'How to Geek' %>
+        </a> &nbsp;
+        <a href="https://discuss.newrelic.com/">
+          <%= image_tag 'new-relic-categories-large.png', size: '358x340', alt: 'New Relic' %>
+        </a> &nbsp;
+        <a href="https://talk.turtlerockstudios.com/">
+          <%= image_tag 'turtle-rock-topic-large.jpg', size: '358x340', alt: 'Turtle Rock' %>
+        </a> &nbsp;
+      </p>
+      <div id="browser"></div>
+      <h1><a href="#browser">What are the minimum browser requirements?</a></h1>
+      <p>
+        Discourse is a JavaScript application designed for the next 10 years of the Internet, so the minimum web browser requirements are high:
+      </p>
+      <ul>
+        <li>Internet Explorer 10+</li>
+        <li>Google Chrome 24+</li>
+        <li>Firefox 14+</li>
+        <li>Safari 5.1+</li>
+      </ul>
+      <p>
+        We do officially support Internet Explorer 9, but some functionality will be unavoidably broken.
+      </p>
+      <div id="tablet-phone"></div>
+      <h1><a href="#tablet-phone">What tablets and phones are supported?</a></h1>
+      <p>
+        Discourse was designed from the start for high resolution displays and ubiquitous touch devices. We automatically switch to a mobile layout for small screen devices.
+      </p>
+      <ul>
+        <li>Mobile Safari, iOS 6+</li>
+        <li>Mobile Chrome, Android 4.1+</li>
+        <li>Mobile IE, Windows Phone 8 or later</li>
+      </ul>
+      <p>
+        <a href="http://discuss.atom.io">
+          <%= image_tag 'nexus-7-mobile-discourse-small-new.png', size: '474x836', alt: 'Atom' %>
+        </a> &nbsp;
+        <a href="http://discourse.soylent.me">
+          <%= image_tag 'iphone-5s-mobile-discourse-small-new.png', size: '242x521', alt: 'Soylent' %>
+        </a>
+      </p>
+      <div id="get-it"></div>
+      <h1><a href="#get-it">How do I get it?</a></h1>
+      <p>
+        Discourse is <a href="https://www.github.com/discourse/discourse">100% free open source software</a>, now and forever.
+      </p>
+      <p>
+        We offer <b><a href="https://payments.discourse.org/buy">official Discourse hosting</a></b>, as well as a one-time install service. Or <a href="http://blog.discourse.org/2014/04/install-discourse-in-under-30-minutes/">install Discourse yourself</a> in the cloud in under 30 minutes.
+      </p>
+      <div id="tech"></div>
+      <h1><a href="#tech">What was it built with?</a></h1>
+      <p>
+        Discourse is a JavaScript application that runs in your web browser, using the <a href="http://emberjs.com/">Ember.js</a> JavaScript framework.
+      </p>
+      <p>
+        The server side of Discourse is written in <a href="http://rubyonrails.org/">Ruby on Rails</a> with a <a href="http://www.postgresql.org/">Postgres</a> database, and <a href="http://redis.io/">Redis</a> server cache. You can deploy our standard Discourse <a href="https://docker.com/">Docker</a> container on any virtualized cloud server (digital ocean, amazon ec2, rackspace, azure) with 1 gb ram.
+      </p>
+      <div id="license"></div>
+      <div></div>
+      <h1><a href="#license">What license is the code under?</a></h1>
+      <p>
+        The <a href="http://www.gnu.org/licenses/gpl-2.0.html">GNU General Public License, version 2</a>.
+      </p>
+      <p>
+        We happily accept pull requests, however, we do ask that you sign a <a href="http://en.wikipedia.org/wiki/Contributor_License_Agreement">Contributor License Agreement</a> so that we have the right to relicense your contributions.
+      </p>
+      <div id="switch"></div>
+      <h1><a href="#switch">Should I switch to Discourse right now?</a></h1>
+      <p>
+        Sure!
+      </p>
+      <p>
+        Discourse is no longer beta software; we spent a year and half working intensively with our beta communities and we're confident we've built a great general purpose discussion tool. We can now generally recommend Discourse for most communities on the web.
+      </p>
+      <p>
+        Discourse works best for <i>new</i> discussion communities. There is tremendous technical and sociological friction to change in any established community. Engage in serious discussions with your community about any such change well in advance. There needs to be broad dissatisfaction with the status quo and strong support for change from the community leaders.
+      </p>
+      <div id="team"></div>
+      <h1><a href="#team">Who are you?</a></h1>
+      <p>
+        The co-founders of Civilized Discourse Construction Kit, Inc. are <a href="http://www.codinghorror.com/blog">Jeff Atwood</a>, <a href="http://eviltrout.com/">Robin Ward</a>, and <a href="http://samsaffron.com/">Sam Saffron</a>. Our core team also includes <a href="http://www.neillalonde.com/">Neil Lalonde</a> and <a href="http://blog.discourse.org/2013/09/welcome-regis-hanol-to-the-discourse-team/">Régis Hanol</a>, with assistance from our designer <a href="http://awesomerobot.com/">Kris Aubuchon</a> and our sysadmin <a href="https://twitter.com/Supermathie">Michael Brown</a>. But as an open source project, Discourse couldn't exist without the hard work of <a href="http://meta.discourse.org">the entire community</a>. Thank you!
+      </p>
+      <p>
+        We're on a ten year mission to improve the Internet with free, open-source discussion software that raises the level of discourse for the entire world. We've come a long way, but it's still a work in progress, and there's a long way to go.
+      </p>
+      <p>
+        Join us. <a href="http://www.youtube.com/watch?v=Xe1TZaElTAs">We'd love to have you.</a>
+      </p>
+    </div>
+  </section>
+</article>
