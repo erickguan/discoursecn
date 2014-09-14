@@ -1,7 +1,7 @@
 <nav id="bar">
   <div>
     <a class="nav-link selected" href="http://www.discourse.org">
-      <img width="64" height="45" src="../images/nav-icon-gray.png" alt="logo">
+      <%= image_tag 'nav-icon-gray.png', size: '64x45', alt: 'logo' %>
     </a>
     <a class="nav-link red" href="/about/">About</a>
     <a class="nav-link orange" href="/faq/">FAQ</a>
@@ -19,7 +19,7 @@
       <i class="fa fa-certificate"></i>
       <span class="version rainbows">1.0</span>
     </div>
-    <img src="../images/logo.png" width="512" height="150" alt="Discourse logo">
+    <%= image_tag 'logo.png', size: '512x150', alt: 'Discourse logo' %>
   </div>
   <h1>Civilized Discussion. On the Internet.</h1>
   <div id="tabs">

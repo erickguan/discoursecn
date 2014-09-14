@@ -242,7 +242,7 @@ article section {
 
 .bg {
     background: white;
-    background-image: url('../images/chat-bg.png');
+    background-image: asset-path('images/chat-bg.png');
     background-attachment: fixed;
     background-repeat: repeat;
     margin-top: 90px;
