@@ -31,8 +31,8 @@
       <div class="box">
         <%= video_tag('infiniscroll.png', class: 'red-border', size: '545x174') %>
       </div>
-      <h2>交谈，不要翻页</h2>
-      <p>为什么把交谈分割成尴尬，难以寻找的页面？为什么要不断地去寻找下一页按钮？</p>
+      <h2>交谈，无需翻页</h2>
+      <p>为什么把交谈分割成尴尬、难以寻找的页面？何必不断地寻找下一页按钮？</p>
       <p>我们用动态载入完全替换了分页。想要阅读更多？一直往下滚动屏幕。</p>
     </div>
     <div class="row">
@@ -71,13 +71,8 @@
         Links to Wikipedia, YouTube, Amazon, GitHub, Twitter, Flickr and dozens of other popular web sites automatically expand to provide additional context and information.
       </p>
         <div class="box">
-          <video width="420" height="200" poster="../video/onebox.png" autoplay="" loop="">
-            <source src="../video/onebox_retina.mp4" type="video/mp4" media="(min-device-pixel-ratio:1.5), (-webkit-min-device-pixel-ratio:1.5), (min--moz-device-pixel-ratio:1.5), (-o-min-device-pixel-ratio:1.5)">
-            <source src="../video/onebox_retina.ogg" type="video/ogg" media="(min-device-pixel-ratio:1.5), (-webkit-min-device-pixel-ratio:1.5), (min--moz-device-pixel-ratio:1.5), (-o-min-device-pixel-ratio:1.5)">
-            <source src="../video/onebox.mp4" type="video/mp4">
-            <source src="../video/onebox.ogg" type="video/ogg">
-            Your browser does not support the video tag.
-          </video> </div>
+          <%= video_tag('onebox.png', size: '420x200') %>
+        </div>
       </div>
     </div>
   </section>
@@ -92,13 +87,8 @@
           We’ll save your spot – and your response – even if you finish on a different computer.
         </p>
         <div class="box">
-          <video width="420" height="200" poster="../video/replyread.png" autoplay="" loop="">
-            <source src="../video/reply_read_retina.mp4" type="video/mp4" media="(min-device-pixel-ratio:1.5), (-webkit-min-device-pixel-ratio:1.5), (min--moz-device-pixel-ratio:1.5), (-o-min-device-pixel-ratio:1.5)">
-            <source src="../video/reply_read_retina.ogg" type="video/ogg" media="(min-device-pixel-ratio:1.5), (-webkit-min-device-pixel-ratio:1.5), (min--moz-device-pixel-ratio:1.5), (-o-min-device-pixel-ratio:1.5)">
-            <source src="../video/reply_read.mp4" type="video/mp4">
-            <source src="../video/reply_read.ogg" type="video/ogg">
-            Your browser does not support the video tag.
-          </video> </div>
+          <%= video_tag('reply_read.png', size: '420x200') %>
+        </div>
       </div>
       <div class="row">
         <h2>Reply as a linked topic</h2>
@@ -117,110 +107,75 @@
   <section id="fourth">
     <div class="twoColumn">
       <div class="row">
-        <h2>Simple metrics</h2>
-        <p>
-          The goal of every link is to be clicked – so every link posted in Discourse shows a live click count.
-        </p>
-        <p>
-          We also track incoming links, so if a post you made becomes super popular, you'll know why.
-        </p>
+        <h2>简介的 metrics</h2>
+        <p>链接是用来点击的 —— 所以发表在 Discourse 论坛中的每个链接都会显示一个动态的点击次数。</p>
+        <p>我们也追踪链入的链接，所以如果您的一个帖子变得非常热门，您就能知道为什么了。</p>
         <div class="box">
           <%= image_tag 'screenshot-metrics.jpg', size: '420x200', alt: 'screenshot' %>
         </div>
       </div>
       <div class="row">
-        <h2>Real time updates</h2>
-        <p>
-          If a topic changes while you are reading or responding to it, or new replies arrive, it will update automatically.
-        </p>
-        <p>As new topics arrive, they also appear at the top of the list.</p>
+        <h2>实时更新</h2>
+        <p>当您在阅读或者回应主题时它发生了更改，或者出现了新的回复，他们将自动出现。</p>
+        <p>当新主题出现时，他们将出现在列表的最上方。</p>
         <div class="box">
-          <video width="420" height="200" poster="../video/newpost.png" autoplay="" loop="">
-            <source src="../video/newpost_retina.mp4" type="video/mp4" media="(min-device-pixel-ratio:1.5), (-webkit-min-device-pixel-ratio:1.5), (min--moz-device-pixel-ratio:1.5), (-o-min-device-pixel-ratio:1.5)">
-            <source src="../video/newpost_retina.ogg" type="video/ogg" media="(min-device-pixel-ratio:1.5), (-webkit-min-device-pixel-ratio:1.5), (min--moz-device-pixel-ratio:1.5), (-o-min-device-pixel-ratio:1.5)">
-            <source src="../video/newpost.mp4" type="video/mp4">
-            <source src="../video/newpost.ogg" type="video/ogg">
-            Your browser does not support the video tag.
-          </video> </div>
+          <%= video_tag('newpost.png', size: '420x200') %>
+        </div>
       </div>
     </div>
   </section>
   <section id="icons">
     <div class="twoColumn">
       <div class="row">
-        <div class="icon"><i class="fa fa-bookmark"></i></div>
-        <h2>Remembers your place</h2>
-        <p>Topics that you read for a while, replied to, or created will be automatically highlighted. And don't worry about reading an entire topic in one sitting – we’ll always save your place for you. </p>
+        <div class="icon"><span class="fa fa-bookmark"></span></div>
+        <h2>记住位置</h2>
+        <p>您阅读了一段时间、回复或者创建的主题，将自动高亮。并且不用担心需要一次阅读整个主题 —— 我们总是会记录您阅读至的位置。</p>
       </div>
       <div class="row">
-        <div class="icon"><i class="fa fa-key"></i></div>
-        <h2>Log in with … anything</h2>
-        <p>
-          Use your Twitter, Facebook, Google, Yahoo, or GitHub credentials to log in. Or set up single sign-on with your existing website.
+        <div class="icon"><span class="fa fa-key"></span></div>
+        <h2>用任何方式登录</h2>
+        <p>使用 QQ、新浪微博、人人网、豆瓣、Twitter、Facebook、Google、Yahoo 或 GitHub 账户登录。或者用您已有的站点设置单点登录。
         </p>
       </div>
       <div class="row">
-        <div class="icon"><i class="fa fa-picture-o"></i></div>
-        <h2>Paste to share images</h2>
-        <p>
-          Want to share an image? Just copy and paste it in. Or drag and drop it in! Posting LOLCats has never been this easy.
-        </p>
+        <div class="icon"><span class="fa fa-picture-o"></span></div>
+        <h2>粘贴分享图片</h2>
+        <p>想要分享图片？直接拷贝粘贴。或者将其拖进编辑器。发表图片从来没有这么轻松过！</p>
       </div>
       <div class="row">
-        <div class="icon"><i class="fa fa-search"></i></div>
-        <h2>Search that actually works</h2>
-        <p>
-          Search on any page: just start typing and get results instantly as you type. The results will be automatically scoped to where you currently are.
-        </p>
+        <div class="icon"><span class="fa fa-search"></span></div>
+        <h2>搜索功能</h2>
+        <p>可以在任何页面搜索：只要打字就能在同时看到搜索结果。搜索的结果默认与您所在的位置有关。</p>
       </div>
       <div class="row">
-        <div class="icon"><i class="fa fa-shield"></i></div>
-        <h2>Community moderation</h2>
-        <p>
-          As users regularly participate by reading and posting, they gain trust. With that trust, they gain powerful abilities to help maintain the community and push out trolls and spammers.
-        </p>
+        <div class="icon"><span class="fa fa-shield"></span></div>
+        <h2>社群管理</h2>
+        <p>当用户日常参与阅读和发表帖子，他们得到信任等级。以此，他们得到了强大的权限维护社群并且驱散捣乱和发广告的人。</p>
       </div>
       <div class="row">
-        <div class="icon"><i class="fa fa-users"></i></div>
-        <h2>Bring your friends</h2>
-        <p>
-          Once you’re trusted, you can click a button to invite your friends via email and they can reply to your topic with a single click. Staff can easily invite an entire group of people by uploading email addresses.
-        </p>
+        <div class="icon"><span class="fa fa-users"></span></div>
+        <h2>叫上您的朋友</h2>
+        <p>只要您获得了信任等级，您就可以点击按钮通过邮件邀请朋友，他们便能点击链接参与回复。职员可以轻松地上传邮件地址列表邀请一群人。</p>
       </div>
       <div class="row">
         <div class="icon">
-  <span class="fa-stack fa-lg" style="color: #fff; font-size: 30px;">
-  <i class="fa fa-circle-o fa-stack-2x"></i>
-  <i class="fa fa-stack-1x" style="font-weight: bold; font-size: .7em;  font-family: arial;">CC</i>
-  </span>
+          <span class="fa-stack fa-lg" style="color: #fff; font-size: 30px;">
+            <span class="fa fa-circle-o fa-stack-2x"></span>
+            <span class="fa fa-stack-1x" style="font-weight: bold; font-size: .7em;  font-family: arial;">CC</span>
+          </span>
         </div>
-        <h2>Your data belongs to you</h2>
-        <p>
-          Our default discussion license is Creative Commons, but you can choose to maximize rights for the site owner or your users. Import or export all your data, right from your browser, any time.
-        </p>
+        <h2>您的数据属于您</h2>
+        <p>我们为讨论内容选择的默认协议是创作公用。但作为站长，您可以选择最符合您权益的协议。您可以在任何时候用浏览器导入或者导出您所有的数据。</p>
       </div>
       <div class="row">
-        <div class="icon">
-          <i class="fa fa-cogs"></i>
-        </div>
-        <h2>Comprehensive API</h2>
-        <p>
-          Discourse has an excellent API. How do we know? Because our JavaScript application is built on top of it. Our large open source community provides plugins, samples, and examples.
+        <div class="icon"><span class="fa fa-cogs"></span></div>
+        <h2>丰富的 API</h2>
+        <p>Discourse 有非常优秀的 API。我们怎么知道？因为我们的 JavaScript 程序是建立在其之上的。我们庞大的社群提供了许多插件、样本和例子。
         </p>
       </div>
     </div>
   </section>
   </div>
 </article>
-<footer class="home">
-  <a href="http://try.discourse.org" class="btn-big">Try Discourse!</a>
-  <section id="foot">
-    <div class="links">
-      <a href="/">
-        <%= image_tag 'icon-tiny.png', size: '24x24', alt: 'discourse' %>
-      </a> <a href="/about/">About</a> | <a href="/faq/">FAQ</a> | <a href="http://blog.discourse.org">Blog</a> | <a href="http://try.discourse.org">Try It</a> | <a href="https://payments.discourse.org/buy">Buy It</a> | <a href="http://meta.discourse.org">Meta</a> | <a href="http://www.discourse.org/privacy-policy">Privacy</a> | <a href="http://twitter.com/discourse">@discourse</a>
-    </div>
-    <p>Content is <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/">by-nc-sa</a>, Discourse logo and “Discourse Forum” ®, Civilized Discourse Construction Kit, Inc.</p>
-    <p><a href="http://www.youtube.com/watch?v=Xe1TZaElTAs">Built with love, Internet style</a></p>
-  </section>
-</footer>
+
+<%= render 'shared/footer' %>
