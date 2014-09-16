@@ -11,16 +11,16 @@
     </div>
     <%= image_tag 'logo.png', size: '512x150', alt: 'Discourse logo' %>
   </div>
-  <h1>Civilized Discussion. On the Internet.</h1>
+  <h1>文明地讨论。互联网平台。</h1>
   <div id="tabs">
     <a href="/about/">
-      <span>Free</span>
-      <span class="middle">Open</span>
-      <span>Simple</span>
+      <span>免费</span>
+      <span class="middle">开放</span>
+      <span>简洁</span>
     </a>
   </div>
   <div id="try">
-    <a href="http://try.discourse.org" class="btn-big">Try Discourse!</a>
+    <a href="http://try.discourse.org" class="btn-big">尝试 Discourse！</a>
   </div>
 </header>
 
@@ -65,10 +65,8 @@
       </div>
       <div class="row">
         <h2>自动展开链接</h2>
-        <p>
-          Want to share a cool link you found? Just paste it in on a single line and we’ll make it awesome.
-        </p><p>
-        Links to Wikipedia, YouTube, Amazon, GitHub, Twitter, Flickr and dozens of other popular web sites automatically expand to provide additional context and information.
+        <p>想要分享东西？直接粘贴链接，我们会显示关于链接的详细信息。</p>
+        <p>链接至维基百科、YouTube、亚马逊、GitHub、Twitter、Flickr 和其他流行的网站就会自动显示扩展信息面板。
       </p>
         <div class="box">
           <%= video_tag('onebox.png', size: '420x200') %>
@@ -79,25 +77,17 @@
   <section id="third">
     <div class="twoColumn">
       <div class="row">
-        <h2>Reply while you read</h2>
-        <p>
-          Type your reply while you continue to read, altering your reply and adding new quotes from others as you explore the topic! You can even jump around to other topics.
-        </p>
-        <p>
-          We’ll save your spot – and your response – even if you finish on a different computer.
-        </p>
+        <h2>阅读时回复</h2>
+        <p>在您继续阅读的时候，开始写您的回复。在继续浏览主题的过程中改变您的回复和增加新的引用！您甚至可以在不同主题之间切换。</p>
+        <p>我们将会保存您阅读的进度 —— 以及您的帖子的草稿 —— 即使您在不同的电脑上最后发表了帖子。</p>
         <div class="box">
           <%= video_tag('reply_read.png', size: '420x200') %>
         </div>
       </div>
       <div class="row">
-        <h2>Reply as a linked topic</h2>
-        <p>
-          You don’t want to interrupt this conversation, but a post just reminded you of a related topic you'd like to share.
-        </p>
-        <p>
-          No problem! Use "Reply as new topic" to start a related conversation – and both topics will be visibly connected together.
-        </p>
+        <h2>回复为链接主题</h2>
+        <p>您不想打断讨论，但是您想要提出一个想分享的相关主题。</p>
+        <p>没问题！使用“回复为新主题”发表一个相关的讨论 —— 并且在两个主题都可以看到他们互相连接。</p>
         <div class="box">
           <%= image_tag 'screenshot-links.jpg', size: '420x200', alt: 'screenshot' %>
         </div>
@@ -178,4 +168,6 @@
   </div>
 </article>
 
-<%= render 'shared/footer' %>
+<div class="home">
+  <%= render 'shared/footer' %>
+</div>
