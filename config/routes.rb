@@ -3,4 +3,5 @@ Rails.application.routes.draw do
 
   get '/about', to: 'statics#about'
   get '/faq', to: 'statics#faq'
+  get '/buy', to: 'statics#buy'
 end
