@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
-  root 'statics#home'
+  root 'statics#home', as: :home
 
-  get '/about', to: 'statics#about'
-  get '/faq', to: 'statics#faq'
-  get '/buy', to: 'statics#buy'
+  get '/about', to: 'statics#about', as: :about
+  get '/faq', to: 'statics#faq', as: :faq
+  get '/buy', to: 'statics#buy', as: :buy
 end

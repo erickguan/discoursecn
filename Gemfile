@@ -46,6 +46,8 @@ group :development, :test do
   gem 'spring'
 end
 
+gem 'nav_lynx'
+
 # Frontend library gems
 
 gem 'normalize-rails'

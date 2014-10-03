@@ -42,71 +42,79 @@ nav {
   position:fixed;
   z-index:4;
 }
-nav div {
+nav .nav-inner {
   width:765px;
-  margin:0px auto;
+  margin:0 auto;
 }
-nav a.nav-link {
+nav ul {
+  display: inline-block;
+}
+nav ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+nav .nav-link a {
   color:#FFF;
   text-decoration:none;
   text-align:center;
   font-family:'Open Sans',sans-serif;
-}
-nav a.nav-link {
-  line-height:48px;
-  min-width:90px;
+  min-width:80px;
   text-align:center;
   font-size:16px;
   float:left;
+  height: 45px;
+  line-height: 45px;
 }
-nav a.red.selected {
+nav .red.selected {
   color:#d13332;
   border-color:#d13332!important;
 }
-nav a.red:hover {
+nav .red:hover {
   color:#d13332;
   text-shadow:0px 0px 5px #d13332;
 }
-nav a.orange.selected {
+nav .orange.selected {
   color:#ffa500;
   border-color:#ffa500!important;
 }
-nav a.orange:hover {
+nav .orange:hover {
   color:#ffa500;
   text-shadow:0px 0px 5px #ffa500;
 }
-nav a.yellow.selected{
+nav .yellow.selected{
   color:#fff9ae;
   border-color:#fff9ae!important;
 }
-nav a.yellow:hover {
+nav .yellow:hover {
   color:#fff9ae;
   text-shadow:0px 0px 5px #fff9ae;
 }
-nav a.green.selected {
+nav .green.selected {
   color:#18b159;
   border-color:#18b159!important;
 }
-nav a.green:hover {
+nav .green:hover {
   color:#18b159;
   text-shadow:0px 0px 5px #18b159;
 }
-nav a.blue.selected {
+nav .blue.selected {
   color:#00aeef;
   border-color:#00aeef!important;
 }
-nav a.blue:hover {
+nav .blue:hover {
   color:#00aeef;
   text-shadow:0px 0px 5px #00aeef;
 }
-nav a.grey.selected {
+nav .grey.selected {
   color:#aaa;
   border-color:#aaa!important;
 }
-nav a.grey:hover {
+nav .grey:hover {
   color:#aaa;text-shadow:0px 0px 5px #aaa;
 }
-nav a.nav-link.selected {
+nav .nav-link.selected {
   line-height:42px;
   border-top:3px solid #0b0d0d;
   background-color:#0b0d0d;
@@ -118,8 +126,8 @@ nav a.fork-us {
   background-color:#2b3234;
   width:104px;
   height:32px;
-  line-height:32px;
   margin-top:8px;
+  line-height:32px;
   font-weight:bold;
   font-size:14px;
   text-decoration:none;

@@ -1,14 +1,16 @@
 <nav id="bar">
-  <div>
-    <a class="nav-link selected" href="/">
-      <%= image_tag 'nav-icon-gray.png', size: '64x45', alt: 'logo' %>
-    </a>
-    <a class="nav-link red" href="/about">关于</a>
-    <a class="nav-link orange" href="/faq">问与答</a>
-    <a class="nav-link yellow" href="http://blog.discourse.org/">官方博客</a>
-    <a class="nav-link green" href="http://try.discourse.org">试验</a>
-    <a class="nav-link blue" href="/buy">购买</a>
-    <a class="nav-link grey" href="http://meta.discoursecn.org">中文论坛</a>
+  <div class="nav-inner">
+    <ul>
+      <%= nav_link_to home_path, {}, {wrapper: 'li', wrapper_class: 'nav-link'} do %>
+        <%= image_tag 'nav-icon-gray.png', size: '64x45', alt: 'logo' %>
+      <% end %>
+      <%= nav_link_to '关于', about_path, {}, {wrapper: 'li', wrapper_class: 'nav-link red'} %>
+      <%= nav_link_to '问与答', faq_path, {}, {wrapper: 'li', wrapper_class: 'nav-link orange'} %>
+      <%= nav_link_to '官方博客', "http://blog.discourse.org/", {}, {wrapper: 'li', wrapper_class: 'nav-link yellow'} %>
+      <%= nav_link_to '试验', "http://try.discourse.org", {}, {wrapper: 'li', wrapper_class: 'nav-link green'} %>
+      <%= nav_link_to '购买', buy_path, {}, {wrapper: 'li', wrapper_class: 'nav-link blue'} %>
+      <%= nav_link_to '中文论坛', "http://meta.discoursecn.org", {}, {wrapper: 'li', wrapper_class: 'nav-link grey'} %>
+    </ul>
     <a class="fork-us" href="http://github.com/discourse/discourse"><span class="fa fa-github-alt"></span>&nbsp;参与开发</a>
   </div>
 </nav>

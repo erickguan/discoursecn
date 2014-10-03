@@ -75,6 +75,8 @@ GEM
     mini_portile (0.6.0)
     minitest (5.4.1)
     multi_json (1.10.1)
+    nav_lynx (1.1.1)
+      rails (>= 3.1.0)
     nokogiri (1.6.3.1)
       mini_portile (= 0.6.0)
     normalize-rails (3.0.1)
@@ -154,6 +156,7 @@ DEPENDENCIES
   font-awesome-rails
   jbuilder (~> 2.0)
   jquery-rails
+  nav_lynx
   normalize-rails
   pg
   rails (= 4.2.0.beta1)
