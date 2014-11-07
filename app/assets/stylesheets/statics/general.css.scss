@@ -1433,3 +1433,234 @@ footer p a {
 span.fa {
   color: rgb(255,255,255);
 }
+
+
+@media only screen and (max-width: 767px) {
+
+  /* top nav stuff */
+  nav div {
+    width: 100%;
+  }
+
+  nav a.nav-link {
+    min-width: 50px;
+  }
+
+  nav a.nav-link.blue {
+    display: none;
+  }
+
+  nav a.nav-link img {
+    margin-left: -10px;
+  }
+
+  nav a.nav-link.red, nav a.nav-link.home {
+    width: 40px;
+  }
+
+  nav a.fork-us {
+    display: none;
+  }
+
+  /* footer stuff */
+
+  footer #foot {
+    width: 100%;
+  }
+
+  footer .links {
+    height: auto;
+  }
+
+
+  /* other pages */
+
+  article h1, article h1 a {
+    font-size: 24px;
+  }
+
+  #about:after, #faq:after, #buy:after {
+    width: 100%;
+    margin: 30px auto 0 auto;
+  }
+
+  #about .row, #buy .row, #why .row {
+    width: 90%;
+    padding: 20px 10px;
+  }
+
+  .biglogo {
+    width: 100%;
+    padding-top: 0;
+  }
+
+  .biglogo img {
+    width: 100%;
+    height: auto;
+  }
+
+  header {
+    height: auto;
+  }
+
+  header #tabs {
+    height: auto;
+  }
+
+  section#first {
+    padding: 20px 0 10px 0;
+  }
+
+  div.box video {
+    width: 100%;
+    height: auto;
+  }
+
+  div.box img {
+    width: 100%;
+    height: auto;
+  }
+
+  #first .row {
+    width: auto;
+    padding: 20px 0;
+    border-bottom: none;
+  }
+
+  #first .box {
+    width: 100%;
+    height: auto;
+  }
+
+  #first .row h2, #first .row p {
+    width: auto;
+    float: none;
+    padding: 0 10px;
+  }
+
+  .twoColumn {
+    width: 100%;
+    margin: 0;
+  }
+
+  .twoColumn .box {
+    border-top: none;
+    margin-top: 0;
+  }
+
+  #second .row {
+    width: 100%;
+    height: auto;
+    margin-top: 30px;
+    padding-top: 20px;
+  }
+  #second .box {
+    position:inherit;
+  }
+
+  #second .row h2, #second .row p {
+    width: auto;
+    float: none;
+    padding: 0 10px;
+  }
+
+  #third .row {
+    width: 100%;
+    height: auto;
+    margin-top: 30px;
+    padding-top: 20px;
+  }
+
+  #third .box {
+    position:inherit;
+  }
+
+  #third .row h2, #third .row p {
+    width: auto;
+    float: none;
+    padding: 0 10px;
+  }
+
+  #fourth .row {
+    width: 100%;
+    height: auto;
+    margin-top: 30px;
+    padding-top: 20px;
+  }
+
+  #fourth .box {
+    position:inherit;
+  }
+
+  #fourth .row h2, #fourth .row p {
+    width: auto;
+    float: none;
+    padding: 0 10px;
+  }
+
+  #icons .row {
+    float: inherit;
+    width: 100%;
+    height: auto;
+    padding-bottom: 10px;
+    margin-right: 10px;
+  }
+
+  #icons .row .icon {
+    margin: 0 10px 0 10px;
+    margin-top: -5px;
+  }
+
+  #icons .twoColumn {
+    margin: 30px 0 30px 0;
+  }
+
+  #icons .row:nth-child(2n) {
+    float:none;
+  }
+
+  .tagline {
+    font-size: 32px;
+  }
+
+  .onepointoh {
+    right: 0px;
+    top: 20px;
+  }
+
+  h1.intro {
+    margin: 0;
+    margin-top: 10px;
+    line-height: auto;
+  }
+
+  .feature-matrix {
+    width: 100%;
+    padding: 0 10px;
+  }
+
+  .feature-matrix td:nth-of-type(odd) {
+    padding-right: 10px;
+  }
+
+  .feature-matrix td:nth-of-type(even) {
+    padding-left: 0;
+  }
+
+  .feature-matrix td {
+    padding: 5px 0;
+  }
+
+  #faq h1 {
+    margin-top: 20px;
+  }
+
+  #faq img {
+    width: 100%;
+    height: auto;
+  }
+
+  #faq .row {
+    width: 90%;
+  }
+}
