@@ -1442,23 +1442,26 @@ span.fa {
     width: 100%;
   }
 
-  nav a.nav-link {
+  nav .nav-link a {
     min-width: 50px;
   }
 
-  nav a.nav-link.blue {
+  nav .nav-link.blue {
     display: none;
   }
 
-  nav a.nav-link img {
+  nav .nav-link img {
     margin-left: -10px;
   }
 
-  nav a.nav-link.red, nav a.nav-link.home {
+  nav .nav-link.red {
+    width: 40px;
+  }
+  nav .nav-link.home {
     width: 40px;
   }
 
-  nav a.fork-us {
+  nav .fork-us {
     display: none;
   }
 
