@@ -19,7 +19,17 @@ set :enable_ssl, false
 # server list. The second argument is a, or duck-types, Hash and is
 # used to set extended properties on the server.
 
-server 'discoursecn.org', user: 'deploy', roles: %w{web app}
+set :rvm_custom_path, '~/.rvm'
+
+set :rvm_ruby_version, '2.1.2'
+
+server 'discoursecn.org', user: 'deploy', roles: %w{web app},
+  ssh_options: {
+    user: 'root',
+    keys: %w(/root/.ssh/id_rsa),
+    forward_agent: false,
+    auth_methods: %w(publickey)
+  }
 
 # Custom SSH Options
 # ==================
