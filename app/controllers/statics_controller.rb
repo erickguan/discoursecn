@@ -14,4 +14,8 @@ class StaticsController < ApplicationController
   def buy
     render :buy
   end
+
+  def why
+    render :why
+  end
 end
