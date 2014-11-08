@@ -52,4 +52,7 @@ gem 'nav_lynx'
 
 gem 'normalize-rails'
 gem 'font-awesome-rails'
-
+gem 'capistrano', '~> 3.2.0'
+gem 'capistrano-rvm'
+gem 'capistrano-bundler'
+gem 'capistrano-rails'

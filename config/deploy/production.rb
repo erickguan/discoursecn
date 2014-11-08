@@ -8,6 +8,10 @@ role :app, %w{deploy@discoursecn.org}
 role :web, %w{deploy@discoursecn.org}
 role :db,  %w{deploy@discoursecn.org}
 
+set :stage, :production
+set :branch, 'master'
+set :enable_ssl, false
+
 
 # Extended Server Syntax
 # ======================
@@ -15,8 +19,7 @@ role :db,  %w{deploy@discoursecn.org}
 # server list. The second argument is a, or duck-types, Hash and is
 # used to set extended properties on the server.
 
-server 'discoursecn.org', user: 'deploy', roles: %w{web app}, my_property: :my_value
-
+server 'discoursecn.org', user: 'deploy', roles: %w{web app}
 
 # Custom SSH Options
 # ==================

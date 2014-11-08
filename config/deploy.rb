@@ -10,8 +10,7 @@ set :repo_url, 'git@github.com:fantasticfears/discoursecn.git'
 # Default deploy_to directory is /var/www/my_app
 set :deploy_to, '/var/www/discoursecn'
 
-# Default value for :scm is :git
-# set :scm, :git
+set :scm, :git
 
 # Default value for :format is :pretty
 # set :format, :pretty
@@ -32,7 +31,11 @@ set :deploy_to, '/var/www/discoursecn'
 # set :default_env, { path: "/opt/ruby/bin:$PATH" }
 
 # Default value for keep_releases is 5
-# set :keep_releases, 5
+set :keep_releases, 5
+
+set :rvm_custom_path, '~/.rvm'
+
+set :rvm_ruby_version, '2.1.2'
 
 namespace :deploy do
 
