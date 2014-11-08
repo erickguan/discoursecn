@@ -35,6 +35,9 @@ set :keep_releases, 5
 
 namespace :deploy do
 
+  before :starting, :load_envs
+  after :publishing, :restart
+
   desc 'Restart application'
   task :restart do
     on roles(:app), in: :sequence, wait: 5 do
@@ -43,7 +46,13 @@ namespace :deploy do
     end
   end
 
-  after :publishing, :restart
+  desc 'Load envs from file'
+  task :load_envs do
+    on roles(:app) do
+      execute '. ~/.envsettings'
+      execute 'env'
+    end
+  end
 
   after :restart, :clear_cache do
     on roles(:web), in: :groups, limit: 3, wait: 10 do
