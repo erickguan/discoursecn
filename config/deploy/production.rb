@@ -21,7 +21,7 @@ set :enable_ssl, false
 
 set :rvm_custom_path, '~/.rvm'
 
-set :rvm_ruby_version, '2.1.2'
+set :rvm_ruby_version, '2.1.5'
 
 server 'discoursecn.org', user: 'deploy', roles: %w{web app},
   ssh_options: {
