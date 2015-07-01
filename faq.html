@@ -1,6 +1,8 @@
-<%= content_for(:title, title_helper('问与答')) %>
-
-<%= render 'shared/header' %>
+---
+layout: default
+title: 问与答
+name: faq
+---
 
 <article id="faq">
   <section>
@@ -52,16 +54,16 @@
       </p>
       <p>
         <a href="http://bbs.boingboing.net">
-          <%= image_tag 'boing-boing-latest-large.png', size: '358x340', alt: 'Boing Boing' %>
+          <img src="{{ site.baseurl }}/public/images/boing-boing-latest-large.png" width="358" height="340" alt="Boing Boing">
         </a> &nbsp;
         <a href="http://discuss.howtogeek.com">
-          <%= image_tag 'how-to-geek-profile-large.png', size: '358x340', alt: 'How to Geek' %>
+          <img src="{{ site.baseurl }}/public/images/how-to-geek-profile-large.png" width="358" height="340" alt="How to Geek">
         </a> &nbsp;
         <a href="https://discuss.newrelic.com/">
-          <%= image_tag 'new-relic-categories-large.png', size: '358x340', alt: 'New Relic' %>
+          <img src="{{ site.baseurl }}/public/images/new-relic-categories-large.png" width="358" height="340" alt="New Relic">
         </a> &nbsp;
         <a href="https://talk.turtlerockstudios.com/">
-          <%= image_tag 'turtle-rock-topic-large.jpg', size: '358x340', alt: 'Turtle Rock' %>
+          <img src="{{ site.baseurl }}/public/images/turtle-rock-topic-large.jpg" width="358" height="340" alt="Turtle Rock">
         </a> &nbsp;
       </p>
       <div id="browser"></div>
@@ -90,10 +92,10 @@
       </ul>
       <p>
         <a href="http://discuss.atom.io">
-          <%= image_tag 'nexus-7-mobile-discourse-small-new.png', size: '474x836', alt: 'Atom' %>
+          <img src="{{ site.baseurl }}/public/images/nexus-7-mobile-discourse-small-new.png" width="478" height="836" alt="Atom">
         </a> &nbsp;
         <a href="http://discourse.soylent.me">
-          <%= image_tag 'iphone-5s-mobile-discourse-small-new.png', size: '242x521', alt: 'Soylent' %>
+          <img src="{{ site.baseurl }}/public/images/iphone-5s-mobile-discourse-small-new.png" width="242" height="521" alt="Soylent">
         </a>
       </p>
       <div id="get-it"></div>

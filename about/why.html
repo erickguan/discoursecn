@@ -1,21 +1,8 @@
-<%= content_for(:title, title_helper('为什么')) %>
-
-<nav id="bar">
-  <div class="nav-inner">
-    <ul>
-      <%= nav_link_to home_path, {}, {wrapper: 'li', wrapper_class: 'nav-link'} do %>
-        <%= image_tag 'nav-icon-gray.png', size: '64x45', alt: 'logo' %>
-      <% end %>
-      <li class="selected nav-link red"><%= link_to '关于', about_path %></li>
-      <%= nav_link_to '问与答', faq_path, {}, {wrapper: 'li', wrapper_class: 'nav-link orange'} %>
-      <%= nav_link_to '官方博客', "http://blog.discourse.org/", {}, {wrapper: 'li', wrapper_class: 'nav-link yellow'} %>
-      <%= nav_link_to '试用', "http://try.discourse.org", {}, {wrapper: 'li', wrapper_class: 'nav-link green'} %>
-      <%= nav_link_to '购买', buy_path, {}, {wrapper: 'li', wrapper_class: 'nav-link blue'} %>
-      <%= nav_link_to '中文论坛', "http://meta.discoursecn.org", {}, {wrapper: 'li', wrapper_class: 'nav-link grey'} %>
-    </ul>
-    <a class="fork-us" href="http://github.com/discourse/discourse"><span class="fa fa-github-alt"></span>&nbsp;参与开发</a>
-  </div>
-</nav>
+---
+layout: default
+title: 为什么
+name: why
+---
 
 <article id="about">
   <section>
@@ -28,12 +15,12 @@
         <tbody><tr>
           <td style="vertical-align: top">
             <a href="http://web.archive.org/web/20000815063701/http://boards.straightdope.com/sdmb/" style="border-bottom: none">
-              <%= image_tag 'straight-dope-2000-screenshot.png', size: '365x208', alt: '2000 年时的 Straight Dope 论坛', title: '2000 年时的 Straight Dope 论坛' %>
+              <img src="{{ site.baseurl }}/public/images/straight-dope-2000-screenshot.png" width="365" height="208" alt="2000 年时的 Straight Dope 论坛" title="2000 年时的 Straight Dope 论坛">
             </a>
           </td>
           <td style="vertical-align: top">
             <a href="http://boards.straightdope.com/sdmb/" style="border-bottom: none">
-              <%= image_tag 'straight-dope-2012-screenshot.png', size: '365x208', alt: '2012 年时的 Straight Dope 论坛', title: '2012 年时的 Straight Dope 论坛' %>
+              <img src="{{ site.baseurl }}/public/images/straight-dope-2012-screenshot.png" width="365" height="208" alt="2012 年时的 Straight Dope 论坛" title="2012 年时的 Straight Dope 论坛">
             </a>
           </td>
         </tr>
@@ -51,7 +38,7 @@
           轻松地一键安装并运营一个针对某一主题的讨论社区对因特网的野性、混乱、充满生机的基因是非常重要的，也是我们一直所知晓且深爱的。
         </p>
         <p>
-          <%= image_tag 'small-waldo.jpg', size: '765x468', alt: '站在人群之中' %>
+          <img src="{{ site.baseurl }}/public/images/small-waldo.jpg" width="765" height="468" alt="站在人群之中">
         </p>
         <p>
           论坛可能不需要<em>迷人</em>，但是他们是所有线上社群的基石之一，并且他们对今天我们能搜索到的有价值的东西很有帮助。这对线上社群的价值是个有力的证明<em>除了</em>论坛软件仍处于原始状态。
