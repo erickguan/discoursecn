@@ -1,0 +1,13 @@
+{% capture class_text %}
+  {% if include.class %}class="{{ include.class }}"{% endif %}
+{% endcapture %}
+{% capture video_name %}{{ include.name | split:"." | first }}{% endcapture %}
+{% capture pixel_ratio %}{% if include.pixel_ratio %}{{ include.pixel_ratio }}{% else %}1.5{% endif %}{% endcapture %}
+
+<video width="{{ include.width }}" height="{{ include.height }}" {{ class_text }} poster="{{ site.baseurl }}/public/videos/{{ include.name }}" autoplay="" loop="">
+  <source src="{{ site.baseurl }}/public/videos/{{ video_name }}_retina.mp4" type="video/mp4" media="(min-device-pixel-ratio:{{ pixel_ratio }}), (-webkit-min-device-pixel-ratio:{{ pixel_ratio }}), (min--moz-device-pixel-ratio:{{ pixel_ratio }}), (-o-min-device-pixel-ratio:{{ pixel_ratio }})">
+  <source src="{{ site.baseurl }}/public/videos/{{ video_name }}_retina.ogg" type="video/ogg" media="(min-device-pixel-ratio:{{ pixel_ratio }}), (-webkit-min-device-pixel-ratio:{{ pixel_ratio }}), (min--moz-device-pixel-ratio:{{ pixel_ratio }}), (-o-min-device-pixel-ratio:{{ pixel_ratio }})">
+  <source src="{{ site.baseurl }}/public/videos/{{ video_name }}.mp4" type="video/mp4">
+  <source src="{{ site.baseurl }}/public/videos/{{ video_name }}.ogg" type="video/ogg">
+  您的浏览器不支持视频标签。
+</video>

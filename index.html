@@ -1,10 +1,7 @@
 ---
 layout: default
+name: home
 ---
-
-<%= content_for(:title, title_helper(nil)) %>
-
-<%= render 'shared/header' %>
 
 <header>
   <div class="biglogo">
@@ -33,7 +30,7 @@ layout: default
   <section id="first">
     <div class="row">
       <div class="box">
-        <%= video_tag('infiniscroll.png', class: 'red-border', size: '545x174') %>
+        {% include video.html name="infiniscroll.png" class="red-border" width="545" height="174" %}
       </div>
       <h2>交谈，无需翻页</h2>
       <p>为什么要把对话分割成尴尬麻烦、难以寻找的页面？何必不断地寻找下一页按钮？</p>
@@ -41,7 +38,7 @@ layout: default
     </div>
     <div class="row">
       <div class="box">
-        <%= video_tag('notify.png', class: 'yellow-border', size: '545x175') %>
+        {% include video.html name="notify.png" class="yellow-border" width="545" height="175" %}
       </div>
       <h2>动态提醒</h2>
       <p>当您不知道其他人说了什么时是很难进行一段讨论的。</p>
@@ -49,7 +46,7 @@ layout: default
     </div>
     <div class="row">
       <div class="box">
-        <%= video_tag('context.png', class: 'yellow-border', size: '545x175') %>
+        {% include video.html name="context.png" class="yellow-border" width="545" height="175" %}
       </div>
       <h2>简洁，附带上下文</h2>
       <p>Discourse 是一个简洁、平面化的论坛，回复就像瀑布一样线性显示在页面中。</p>
@@ -63,7 +60,7 @@ layout: default
         <p>Discourse 从开发的第一天起便为高分辨率的触摸设备设计，并且有一个专门设计的移动版本。</p>
         <p>使用您的笔记本、平板和您的智能手机访问论坛。不需要担心“这个站点有一个移动应用，您是否要安装它？”的提示。</p>
         <div class="box">
-          <%= image_tag 'screenshot-app.jpg', size: '420x200', alt: 'screenshot' %>
+          <img src="{{ site.baseurl }}/public/images/screenshot-app.jpg" width="420" height="200", alt="截图">
         </div>
       </div>
       <div class="row">
@@ -72,7 +69,7 @@ layout: default
         <p>链接至维基百科、YouTube、亚马逊、GitHub、Twitter、Flickr 和其他流行的网站就会自动显示扩展信息面板。
       </p>
         <div class="box">
-          <%= video_tag('onebox.png', size: '420x200') %>
+          {% include video.html name="onebox.png" width="420" height="200" %}
         </div>
       </div>
     </div>
@@ -84,7 +81,7 @@ layout: default
         <p>在您在阅读的时候，就开始写您的回复。在浏览主题的过程中修改您的回复并引用更多内容！您甚至可以在不同主题之间切换而无需打断编辑。</p>
         <p>我们会保存您阅读的进度——以及您的帖子的草稿——即使您最后用不同的设备发表了帖子也行。</p>
         <div class="box">
-          <%= video_tag('reply_read.png', size: '420x200') %>
+          {% include video.html name="reply_read.png" width="420" height="200" %}
         </div>
       </div>
       <div class="row">
@@ -92,7 +89,7 @@ layout: default
         <p>您不想打断讨论，但是您想要分享一个相关主题。</p>
         <p>没问题！使用“回复为新主题”开启一个相关的主题——并且在两个主题都可以看到他们互相联结。</p>
         <div class="box">
-          <%= image_tag 'screenshot-links.jpg', size: '420x200', alt: 'screenshot' %>
+          <img src="{{ site.baseurl }}/public/images/screenshot-links.jpg" width="420" height="200", alt="截图">
         </div>
       </div>
     </div>
@@ -104,7 +101,7 @@ layout: default
         <p>链接是用来点击的——所以发表在 Discourse 论坛中的每个链接都会显示一个动态更新的点击次数计数器。</p>
         <p>我们也追踪链入的链接，所以如果您的一个帖子变得非常热门，您就能知道为什么了。</p>
         <div class="box">
-          <%= image_tag 'screenshot-metrics.jpg', size: '420x200', alt: 'screenshot' %>
+          <img src="{{ site.baseurl }}/public/images/screenshot-metrics.jpg" width="420" height="200", alt="截图">
         </div>
       </div>
       <div class="row">
@@ -112,7 +109,7 @@ layout: default
         <p>当您在阅读或者回应主题时它发生了更改，或者有新的回复，他们将自动出现。</p>
         <p>当新主题出现时，他们将出现在列表的最上方。</p>
         <div class="box">
-          <%= video_tag('newpost.png', size: '420x200') %>
+          {% include video.html name="newpost.png" width="420" height="200" %}
         </div>
       </div>
     </div>
@@ -170,7 +167,3 @@ layout: default
   </section>
   </div>
 </article>
-
-<div class="home">
-  <%= render 'shared/footer' %>
-</div>
