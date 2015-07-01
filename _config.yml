@@ -5,7 +5,7 @@ permalink:           pretty
 relative_permalinks: true
 
 # Setup
-title:               Discourse
+title:               Discourse中文网
 baseurl:             ''
 
 sass:
