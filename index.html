@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 <%= content_for(:title, title_helper(nil)) %>
 
 <%= render 'shared/header' %>
@@ -7,9 +11,9 @@
     <div class="onepointoh">
       <span class="new rainbows">新！</span>
       <i class="fa fa-certificate"></i>
-      <span class="version rainbows">1.2</span>
+      <span class="version rainbows">1.3</span>
     </div>
-    <%= image_tag 'logo.png', size: '512x150', alt: 'Discourse logo' %>
+    <img src="{{ site.img_path }}/logo.png" width="512" height="150" alt="Discourse 标志">
   </div>
   <h1>文明地讨论。互联网平台。</h1>
   <div id="tabs">
